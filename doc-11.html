@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .products-box div {
+            float: left;
+            width: 240px;
+            border: 1px solid silver;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>div 엘리먼트</h1>
+    <div style="color: blue; font-style : italic">
+        <p>div 엘리먼트는 블록 엘리먼트다.</p>
+        <p>div 엘리먼트는 블록 엘리먼트, 인라인 엘리먼트, 다른 div 엘리먼트를 포함할 수 있다.</p>
+        <p>div 엘리먼트는 여러 엘리먼트를 하나의 그룹으로 묶을 때 사용되는 엘리먼트다.</p>
+        <p>div 엘리먼트를 사용해서 여러 엘리먼트를 하나의 그룹으로 묶으면, 그룹 단위로 스타일을 부여할 수 있다.</p>
+    </div>
+    <div style="color: orange; font-size : 20px">
+        <p>div 엘리먼트는 블록 엘리먼트다.</p>
+        <p>div 엘리먼트는 블록 엘리먼트, 인라인 엘리먼트, 다른 div 엘리먼트를 포함할 수 있다.</p>
+        <p>div 엘리먼트는 여러 엘리먼트를 하나의 그룹으로 묶을 때 사용되는 엘리먼트다.</p>
+        <p>div 엘리먼트를 사용해서 여러 엘리먼트를 하나의 그룹으로 묶으면, 그룹 단위로 스타일을 부여할 수 있다.</p>
+    </div>
+    <div style="background-color: black; color: white; font-weight: bold;">
+        <p>div 엘리먼트는 블록 엘리먼트다.</p>
+        <p>div 엘리먼트는 블록 엘리먼트, 인라인 엘리먼트, 다른 div 엘리먼트를 포함할 수 있다.</p>
+        <p>div 엘리먼트는 여러 엘리먼트를 하나의 그룹으로 묶을 때 사용되는 엘리먼트다.</p>
+        <p>div 엘리먼트를 사용해서 여러 엘리먼트를 하나의 그룹으로 묶으면, 그룹 단위로 스타일을 부여할 수 있다.</p>
+    </div>
+
+    <h2>div의 활용</h2>
+    <div>
+        <input type="checkbox" checked onchange="toggleDisplay(this, 'box-1');">추천
+        <input type="checkbox" checked onchange="toggleDisplay(this, 'box-2');">신규
+    </div>
+
+    <div style="width: 100%; overflow : hidden;" id="box-1"> 
+        <h3>추천 노트북 리스트</h3>
+        <div class="products-box">
+            <div>
+                <img src="resources/images/notebook-2.jpg" alt="노트북 이미지">
+                <p>11월 달에 세일이 가장 많이 들어가는 제품입니다.</p>
+            </div>
+            <div>
+                <img src="resources/images/notebook-2.jpg" alt="노트북 이미지">
+                <p>11월 달에 세일이 가장 많이 들어가는 제품입니다.</p>
+            </div>
+            <div>
+                <img src="resources/images/notebook-2.jpg" alt="노트북 이미지">
+                <p>11월 달에 세일이 가장 많이 들어가는 제품입니다.</p>
+            </div>
+            <div>
+                <img src="resources/images/notebook-2.jpg" alt="노트북 이미지">
+                <p>11월 달에 세일이 가장 많이 들어가는 제품입니다.</p>
+            </div>
+            <div>
+                <img src="resources/images/notebook-2.jpg" alt="노트북 이미지">
+                <p>11월 달에 세일이 가장 많이 들어가는 제품입니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100%; overflow: hidden;" id="box-2">
+        <h3>신규 노트북 리스트
+            <div class="products-box">
+                <div>
+                    <img src="resources/images/notebook-1.jpg" alt="노트북 이미지">
+                    <p>11월 달에 세일이 가장 많이 들어가는 제품입니다.</p>
+                </div>
+                <div>
+                    <img src="resources/images/notebook-1.jpg" alt="노트북 이미지">
+                    <p>11월 달에 세일이 가장 많이 들어가는 제품입니다.</p>
+                </div>
+                <div>
+                    <img src="resources/images/notebook-1.jpg" alt="노트북 이미지">
+                    <p>11월 달에 세일이 가장 많이 들어가는 제품입니다.</p>
+                </div>
+                <div>
+                    <img src="resources/images/notebook-1.jpg" alt="노트북 이미지">
+                    <p>11월 달에 세일이 가장 많이 들어가는 제품입니다.</p>
+                </div>
+                <div>
+                    <img src="resources/images/notebook-1.jpg" alt="노트북 이미지">
+                    <p>11월 달에 세일이 가장 많이 들어가는 제품입니다.</p>
+                </div>
+            </div>
+        </h3>
+    </div>
+</div>
+<script>
+    function toggleDisplay(checkbox, id) {
+        let el = document.getElementById(id);
+        if (checkbox.checked) {
+            el.style.display = "block";
+        } else {
+            el.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

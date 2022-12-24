@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span, div {
+            border: 1px solid black;
+        }
+        #box-1 {
+            margin-left: 20px;
+        }
+        #box-2 {
+            margin-right: 50px;
+        }
+        #box-4 {
+            margin-left: -30px;
+        }
+        #box-5 {
+            border-top: 5px solid red;
+            padding-top: 20px;
+        }
+        #box-6 {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>박스모델</h1>
+
+    <div style="border: 1px solid red;">
+        <span id="box-1">컨텐츠1</span>
+        <span id="box-2">컨텐츠2</span>
+        <span id="box-3">컨텐츠3</span>
+        <span id="box-4">컨텐츠4</span>
+    </div>
+    <div style="border: 1px solid red; padding: 10px;">
+        <div id="box-5">컨텐츠5</div>
+        <div id="box-6">컨텐츠6</div>
+    </div>
+    <!-- 
+        박스모델의 프로퍼티값 설정하기
+            - top, right, bottom, left를 각각 지정하기
+              {padding-top:10px; padding-right:40px; padding-bottom:80px; padding-left:120px; }
+            - top, right, bottom, left의 값을 전부 같은 값으로 지정하기
+                {padding: 40px; }
+            - top, bottom이 같은 값, right와 left를 같은 값으로 지정하기
+                { padding: 40px 80px}   /* top과 bottom은 40px, right와 left는 80px */
+            - top, right, bottom, left를 각각 다른 값으로 지정하기
+             { padding: 10px 20px 40px 80px; }  /* top -> right -> bottom -> left 순으로 지정된다.*/
+     -->
+    <div style="padding: 20px; margin-top: 5px;">색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+    </div>
+    <div style="padding: 20px 50px; margin-top: 5px;">색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+    </div>
+    <div style="padding: 10px 40px 80px 120px; margin-top: 5px;">색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+        색의 삼원색이기도 하다. 여기서의 자주색을 마젠타(Magenta)라고 하며 CMYK 색공간에서 이 색과 노란색을 섞으면 빨간색, 시안을 섞으면 파란색이 된다. 보색은 초록색 계열의 색. 실제 색은 거의 분홍색 취급을 받고 있다.
+    </div>
+</body>
+</html>

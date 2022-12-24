@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>칸의 병합</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>칸의 병합</h1>
+
+    <h2>가로 방향 병합</h2>
+    <!-- 
+        colspan 속성
+            - 가로방향 셀 병합을 갯수로 지정하는 속성이다.
+            - th, td 태그의 속성이다.
+                - <td colspan="병합할 칸의 갯수"> 
+                - <th clospan="병합할 칸의 갯수">
+            - 표의 칸을 맞추기 위해서는 (병합할 칸의 갯수 - 1)만큼 td, th 태그를 해당 행에서 삭제해야 한다.
+     -->
+    <table>
+        <tr>
+            <td colspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="3">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td colspan="5">1</td>
+            <!-- <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td> -->
+        </tr>
+        <tr>
+            <td colspan="2">1</td>
+            <td colspan="2">2</td>
+            <td>3</td>
+            <!-- <td>4</td>
+            <td>5</td> -->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+    <h2>세로 방향 병합</h2>
+     <!-- 
+        rowspan 속성
+            - 세로방향 셀 병합을 갯수로 지정하는 속성이다.
+            - th, td 태그의 속성이다.
+                - <td rowspan="병합할 칸의 갯수"> 
+                - <th rowspan="병합할 칸의 갯수">
+            - 표의 칸을 맞추기 위해서는 (병합할 칸의 갯수 - 1)만큼 
+              다음행의 td, th 태그를 삭제해야 한다.
+     -->
+    <table>
+        <tr>
+            <td rowspan="6">1</td>
+            <td rowspan="3">2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <!-- <td>2</td> -->
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <!-- <td>2</td> -->
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <td rowspan="3">2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <!-- <td>2</td> -->
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <!-- <td>2</td> -->
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+</body>
+</html>

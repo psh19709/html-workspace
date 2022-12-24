@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+        }
+        #box-1 {
+            background-color: red;
+            z-index: 10;
+
+        }
+        #box-2 {
+            position: relative;
+            left: 50px;
+            top: -50px;
+            background-color: blue;
+            z-index: -1;
+        }
+        #box-3 {
+            position: relative;
+            left: 200px;
+            background-color: green;
+        }
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 200px;
+        }
+        #container-1 {
+            position: absolute;
+            left: 400px;
+            top: 200px;
+            background-color: lightgray;
+        }
+        #container-2 {
+            position: relative;
+            left: 300px;
+            background-color: lightgreen;
+        }
+        #box-4, #box-5, #box-6{
+            position: absolute;
+            left: 175px;
+            top: 50px;
+        }
+        #box-7 {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>엘리먼트의 위치를 결정하기</h1>
+
+    <h2>relative로 엘리먼트를 변경하기</h2>
+    <p>relative는 그 엘리먼트가 원래 있어야하는 위치를 기준으로 이동시킨다.</p>
+    <div id="box-1" class="box">박스1</div>    
+    <div id="box-2" class="box">박스2</div>    
+    <div id="box-3" class="box">박스3</div>   
+    
+    <h3>absolute로 엘리먼트의 위치 변경하기</h3>
+    <div id="container-1" class="container">
+        <div id="box-4" class="box"></div>
+    </div>
+    <div id="container-2" class="container">
+        <div id="box-5" class="box"></div>
+    </div>
+    <div id="box-6" class="box"></div>
+
+    <h3>fixed로 엘리먼트의 위치를 고정시키기</h3>
+    <div id="box-7" class="box">박스7</div>
+</body>
+</html>

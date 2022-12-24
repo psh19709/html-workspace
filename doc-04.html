@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 태그</title>
+</head>
+<body>
+    <h1>목록태그</h1>
+    <!-- 
+        순서없는 목록(Unordered List)
+            -ul 태그가 있다.
+            -ul태그는 목록아이템(List items)을 포함한다.
+            -ul태그는 li태그를 자식태그로 포함한다.
+            - 순서없는 목록은 메뉴 리스트, 카테고리 리스트, 뉴스 리스트를 담을 수 있는 태그다.
+       
+            순서있는 목록(Ordered List)
+            - ol태그가 있다
+            - ol태그는 목록아이템(List items)을 포함한다.
+            - ol태그는 li태그를 자식태그로 포함한다.
+            - 순서있는 목록은 영화 순위, 성적순위, 요리 레시피와 같이 순서가 있는 리스트를 담을 수 있는 태그다.
+       
+            정의 목록 (Description List)
+            - dl 태그가 있다.
+            - dl 태그는 항목의 이름(Description term), 항목의 데이터(Description date)를 포함한다.
+            - dl 태그는 dt태그와 dd 태그를 포함한다.
+            - dt 태그와 dd 태그가 하나의 쌍이다.
+            - dt 태그 하나와 여러 개의 dd 태그를 하나의 쌍으로 구성할 수도 있다.
+            - 정의 목록은 영화의 정보, 책의 정보, 상품의 정보를 담을 수 있다.
+                * 영화의 정보, 책의 정보, 상품의 정보는 전부 name=value의 형태로 구성되기 때문이다.
+                * 영화의 정보는 제목=자백, 감독=윤종석, 상영일자=2022.10.26과 같은 형태다.
+
+     -->
+
+    <h2>순서없는 목록</h2>
+    <h3>카테고리 목록</h3>
+    <ul>
+        <li>국내도서</li>
+        <li>외국도서</li>
+        <li>전자책</li>
+        <li>음반</li>
+    </ul>
+    <h3> 메뉴목록</h3>
+    <ul>
+        <li>에소프레소</li>
+        <li>아메리카노</li>
+        <li>카푸치노</li>
+        <li>라떼</li>
+
+    </ul>
+    <h2>순서있는 목록</h2>
+    <h3>영화예매순위</h3>
+    <ol>
+        <li>자백</li>
+        <li>리멤버</li>
+        <li>겟아웃</li>
+        <li>고속도로가족</li>
+        <li>동감</li>
+        <li>블랙야담</li>
+    </ol>
+
+    <h2>정의 목록</h2>
+    <h3>영화 정보</h3>
+    <dl>
+        <dt>제목</dt><dd>자백</dd>
+        <dt>감독</dt><dd>윤종서</dd>
+        <dt>출연진</dt><dd>소지섭</dd><dd>김윤진</dd><dd>나나</dd>
+        <dt>상영일자</dt><dd>2022.10.26</dd>
+        <dt>상영시간</dt><dd>105분</dd>
+        <dt>관람등급</dt><dd>15세 이상 관람가</dd>
+    </dl>
+</body>
+</html>

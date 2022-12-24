@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크</title>
+</head>
+<body>
+    <h1>링크태그</h1>
+    <!-- 
+        링크 태그
+            - 다른 HTML 문서와 연결되는 태그다.
+            - a 태그가 있다.
+            - a 태그의 주요 속성
+                - href
+                    - 연결되는 다른 HTML문서의 주소를 지정한다.
+                    - 필수 속성이다.
+                - target
+                    - 일크와 연결된 HTML 문서를 어디에서 오픈 할 것인지를 결정한다.
+                    - target="_blank" : 링크된 문서를 새 창이나 새 탭에서 연다.
+                    - target="_self" : 링크된 문서를 혀재 창이나 현재 탭에서 연다.(기본값)
+                    - 생략가능한 속성이다.
+                - title
+                    - 풍선도움말에 표시할 내용을 지정한다.
+                    - 생략가능한 속성이다.
+     -->
+
+    <h2>내부 링크</h2>
+    <p>같은 웹 애플리케이션 내부의 다른 HTML 문서와 연결되는 링크다.</p>
+    <a href="doc-01.html" target="_blank" title="첫번째 문서입니다.">문서1</a>
+    <a href="doc-02.html" target="_blank" title="두번째 문서입니다.">문서2</a>
+    <a href="doc-03.html">문서3</a>
+    <a href="doc-04.html">문서4</a>
+    <a href="doc-05.html">문서5</a>
+
+    <h2>외부 링크</h2>
+    <p>외부 사이트와 연결되는 링크다. http:// 로 시작한다.</p>
+    <a href="http://www.daum.net">다음</a>
+    <a href="http://www.naver.com">네이버</a>
+    <a href="http://www.google.com">구글</a>
+    <a href="http://www.yahoo.jp">야후</a>
+</body>
+</html>

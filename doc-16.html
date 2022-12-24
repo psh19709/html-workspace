@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>textarea 태그</h1>
+
+    <form>
+        <dl>
+            <dt>textarea 태그</dt>
+            <dd>row속성은 행의 갯수, cols는 컬럼 수를 지정한다.</dd>
+            <dd><textarea name="meno1" rows="3" cols="100"></textarea></dd>
+            <dd><textarea name="meno1" rows="6" cols="50"></textarea></dd>
+
+            <dt>textarea 태그</dt>
+            <dd>textarea 태그는 반드시 여는태그와 닫는태그를 같이 작성해야 한다.</dd>
+            <dd><textarea name="memo2"></textarea></dd>
+            
+            <dt>textarea 태그의 값</dt>
+            <dd>textarea의 값을 지정할 때는 value 속성은 사용할 수 없다.</dd>
+            <dd>textarea의 값을 지정할 때는 여는태그와 닫는태그 사이에 값을 적는다.</dd>
+            <!-- <dd><textarea name="memo2" value="안녕하세요"></textarea></dd> -->
+            <dd><textarea name="memo3">안녕하세요</textarea></dd>
+            
+            <dt>textarea 비활성화와 읽기전용 적용</dt>
+            <dd><textarea name="memo4" readonly>안녕하세요</textarea></dd>
+            <dd><textarea name="memo5" disabled>안녕하세요</textarea></dd>
+        </dl>
+    </form>
+</body>
+</html>

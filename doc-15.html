@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selete 태그</title>
+</head>
+<body>
+    <h1>select 태그</h1>
+
+    <form action="post" action="register.jsp">
+        <dl>
+            <dt>셀렉터 박스</dt>
+            <dd>select태그에 name 속성으로 지정된 이름과 옵션에서 선택한 값의 쌍이 서버로 제출된다.</dd>
+            <dd>옵션태그에 value속성이 정의되어 있지 않으면 옵션태그의 컨텐츠가 서버로 제출되는 값이 된다.</dd>
+            <dd>아래의 셀렉터박스는 test1=값2 과 같은 형태로 선택된 값이 서버로 제출된다.</dd>
+            <dd>
+                <select name="test1">
+                    <option value="">값1</option>
+                    <option value="">값2</option>
+                    <option value="">값3</option>
+                </select>
+            </dd>
+            <dt>셀렉터 박스</dt>
+            <dd>옵션태그에 value속성이 정의되어 있으면 value 속성으로 지정된 값이 서버로 제출되는 값이 된다.</dd>
+            <dd>아래의 셀렉터박스는 test2=v2 과 같은 형태로 선택된 값이 서버로 제출된다.</dd>
+            <dd>
+                <select name="test2">
+                    <option value="v1">값1</option>
+                    <option value="v2">값2</option>
+                    <option value="v3">값3</option>
+                </select>
+            </dd>
+            <dt>옵션그룹이 있는 셀렉터박스</dt>
+            <dd>
+                <select name="dept">
+                    <optgroup label="공과대학">
+                        <option value="">컴퓨터공학과</option>
+                        <option value="">기계공학과</option>
+                        <option value="">전기공학과</option>
+                        <option value="">전자공학과</option>
+                        <option value="">환경공학과</option>
+                    </optgroup>
+
+                    <optgroup label="인문대학"></optgroup>
+                        <option value="">국어국문학과</option>
+                        <option value="">영어영문학과</option>
+                        <option value="">사회학과</option>
+                        <option value="">역사학과</option>
+                        <option value="">철학과</option>
+                    </optgroup>
+
+                    <optgroup label="예술대학">
+                        <option value="">음악학과</option>
+                        <option value="">무용학과</option>
+                    </optgroup>
+
+                </select>
+            </dd>
+            <dt>옵션 선택하기, 비활성화하기</dt>
+            <dd>option태그에 selected 혹은 selected="selected"를 지정하면 해당 옵션이 미리 선택되어 있다.</dd>
+            <dd>option태그에 disabled 혹은 disabled="disabled"를 지정하면 해당 옵션을 선택할 수 없다.</dd>
+            <dd>select태그에 disabled 혹은 disabled="disabled"를 지정하면 select 박스가 비활성화된다.</dd>
+            <dd>
+                <select name="city">
+                    <option>서울특별시</option>
+                    <option>인천광역시</option>
+                    <option selected>부산광역시</option>
+                    <option>대전광역시</option>
+                    <option>대구광역시</option>
+                    <option>광주광역시</option>
+                    <option>울산광역시</option>
+                    <option disabled>평양특별시</option>
+                </select>
+            </dd>
+            <dt>select 박스 예</dt>
+            <dd>
+                <select name="career">
+                    <option value="" selected disabled> -- 경력사항을 선택하세요 --</option>
+                    <option value="0">신입</option>
+                    <option value="1">1년 이상</option>
+                    <option value="3">3년 이상</option>
+                    <option value="5">5년 이상</option>
+                    <option value="7">7년 이상</option>
+                    <option value="10">10년 이상</option>
+                </select>
+            </dd>
+        </dl>
+        <input type="submit" value="제출" />
+    </form>
+</body>
+</html>

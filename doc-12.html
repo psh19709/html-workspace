@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-danger {
+            color: red;
+        }
+        .text_success {
+            color: blue;
+        }
+        .text-small {
+            font-size: smaller;
+        }
+        .text-box{
+            padding: 5px;
+            border: 1px soild #eee;
+            border-radius: 3px;
+        }
+        .text-blue-box {
+            background-color: steelblue;
+            color: white;
+        }
+        .text-green-box {
+            background-color: olivedrab;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>span 태그</h1>
+    <p>span 태그는 텍스트를 감싸는 태그다.</p>
+    <p>span 태그에 담겨있는 텍스트는 style, id, class 속성을 이용해서 다양한 스타일로 표현할 수 있다.</p>
+
+    <h2>span 태그의 활용</h2>
+    <dl>
+        <dt>제목</dt><dd>이것이 자바다</dd>
+        <dt>저자</dt><dd>홍길동 <span class="text_success text-small">(김유신 감수, 이순신 테스트)</span></dd>
+        <dt>출판사</dt><dd>중앙출판사</dd>
+        <dt>가격</dt><dd><span class="text-danger"><strong>35,000</strong> 원</span> <span class="text-danger text-small">(500원 적립)</span></dd>
+        <dt>기타</dt><dd><span class="text-box text-blue-box">무료배송</span>, <span class="text-box text-green-box">당일배송</span></dd>
+    </dl>
+</body>
+</html>

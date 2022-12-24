@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         table{
+            width: 100%;  
+            border-collapse: collapse;  
+        }
+        th, td {
+            border: 1px solid black;  
+            padding: 14px;  
+            text-align: left;   
+        }
+
+        /* 태그 선택자 */
+        h1 { color: red;}
+        h1, h2 { text-decoration: underline;}
+
+        /* 아이디 선택자*/
+        #box-1 {border: 1px solid red;}
+        #box-2 {border: 1px solid blue;}
+
+        /* 클래스 선택자*/
+        .intro {color: orange;}
+
+        /* 자손 선택자*/
+        #box-1 .intro {font-weight: bold;}
+
+        /* 형제 선택자*/
+        h2 + div {background-color: lightgray;}
+        h2 ~ div { width: 50%;}
+
+        /* 속성 선택자*/
+        a[title='다음'] {background-color: yellow;}
+        a[href^='http'] {border: 1px solid red;}
+        a[href$='http'] { font-size: 25px;}
+        a[title*='홈'] {padding-left: 30px;}        /* '*='는 홈이라는 글자가 있으면 표시가 되는거고*/
+        a[title~='홈'] {padding-right: 100px;}      /* '~='는 홈이라는 글자가 딱 떨어지게 있어야 표시가 되는거다/*/
+
+        /* 필터 선택자*/
+        /* p중에서 부모를 기준으로 첫번째 자신인 엘리먼트를 선택한다.*/
+        p:first-child { font-size: 30px;}
+        /* p중에서 부모를 기준으로 마지막번째 자식인 엘리먼트를 선택한다.*/
+        p:last-child { border: 2px solid blue;}
+        /* p중에서 부모를 기준으로 두번째 자신인 엘리먼트를 선택한다.*/
+        p:nth-child(2) { border: 2px solid red;}
+        /* tbody의 자손인 tr 중에서 짝수번째 자식인 엘리먼트를 선택한다.*/
+        tbody tr:nth-child(even) {background-color: #eee;}          /* tr은 가로줄 */
+        /* tbody의 자손인 dt 중에서 부모를 기준으로 4번째 자식인 엘리먼트를 선택한다.*/
+        tbody td:nth-child(4) { font-weight: bold; color: red;}     /* td는 세로줄 */
+        /* tbody의 자손인 tr 중에서 부모를 기준으로 2번째 자식인 tr의 후손중에서 마지막번째 자식인 엘리먼트를 선택한다.*/
+        tbody tr:nth-child(2) td:last-child { font-weight: bold; color: blue;}
+        /* tbody의 자손이 tr중에서 마우스포인트가 위치하고 있는 엘리먼트를 선택한다. */
+        tbody tr:hover {background-color: yellow;}
+        /* 방문하지 않은 링크, 방문한 링크를 선택한다. */
+        a:link, a:visited {color: black; text-decoration: none;}
+        /* 지금 클릭한 링크, 마우스포인트가 위치하고 있는 링크를 선택한다. */
+        a:hover {color: blue; text-decoration: underline;}
+        a:active {color: red; text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <h1>css 선택자</h1>
+    <h2>기본 선택자</h2>
+
+    <div id="box-1">
+        <p class="intro">첫번째 박스의 내용</p>
+        <p class="intro">첫번째 박스의 내용</p>
+        <p class="intro">첫번째 박스의 내용</p>
+        <p class="intro">첫번째 박스의 내용</p>
+        <p class="intro">첫번째 박스의 내용</p>
+        <p class="intro">첫번째 박스의 내용</p>
+        <p class="intro">첫번째 박스의 내용</p>
+    </div>
+    <div id="box-2">
+        <p class="intro">두번째 박스의 내용</p>
+        <p class="intro">두번째 박스의 내용</p>
+        <p class="intro">두번째 박스의 내용</p>
+        <p class="intro">두번째 박스의 내용</p>
+        <p class="intro">두번째 박스의 내용</p>
+        <p class="intro">두번째 박스의 내용</p>
+        <p class="intro">두번째 박스의 내용</p>
+        <p class="intro">두번째 박스의 내용</p>
+    </div>
+
+    <h2>속성 선택자</h2>
+    <h3>링크목록</h3>
+    <ul>
+        <li><a href="http://www.daum.net" title="다음 홈페이지">다음</a></li>
+        <li><a href="http://www.google.com" title="구글 홈페이지">구글</a></li>
+        <li><a href="http://www.naver.com" title="네이버 홈페이지">네이버</a></li>
+        <li><a href="http://www.yahoo.jp" title="야후재팬 홈 페이지">야후재팬</a></li>
+        <li><a href="doc-01.html">태그연습1</a></li>
+        <li><a href="doc-02.html">태그연습2</a></li>
+        <li><a href="doc-03.html">태그연습3</a></li>
+        <li><a href="doc-04.html">태그연습4</a></li>
+    </ul>
+
+    <h2></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>상품번호</th>
+                <th>상품명</th>
+                <th>가격</th>
+                <th>할인가격</th>
+                <th>재고수량</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>아이패드 미니</td>
+                <td>700,000 원</td>
+                <td>670,000 원</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

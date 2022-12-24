@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지태그</title>
+    <style>
+        img{
+            width: 200px;
+            height: 240px;
+            opacity: 0.3;
+        }
+        img:hover { /* img 태그 중에서 마우스 포인트가 올라와 있는 것 */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>이미지태그</h1>
+    <!-- 
+        이미지 태그
+            - img 태그가 있다.
+            - img 태그는 컨텐츠를 가지지 않는 태그다.
+             <img>컨텐츠</img>가 아니라 <img />다.
+            - 주요속성
+                src="이미지 경로"
+                alt="이미지에 대한 설명"
+                * alt 속성에 스크린리더 프로그램이 이미지에 대한 내용을 읽을 수 있도록 
+                  이미지에 대한 설명을 설정한다.(웹 접근성)
+     -->
+    <h2>이미지표시하기</h2>
+    <img src="resources/images/notebook-1.jpg" alt="상성 노트북" />
+    <img src="resources/images/notebook-2.jpg" alt="애플 맥북" />
+    <img src="resources/images/notebook-3.jpg" alt="한성 15인치 노트북"/>
+    <img src="resources/images/notebook-4.jpg" alt="아수스 게이밍 노트북"/>
+    
+    <h2>다른 사이트 이미지 표시하기</h2>
+    <img src="https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F4127deb531fea9b766461efb61da18af55697d3c" alt="영화 자백 포스터" />
+    <img src="https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F4127deb531fea9b766461efb61da18af55697d3c" alt="영화 자백 포스터" />
+    <img src="https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F4127deb531fea9b766461efb61da18af55697d3c" alt="영화 자백 포스터" />
+    <img src="https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F4127deb531fea9b766461efb61da18af55697d3c" alt="영화 자백 포스터" />
+    <img src="https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F4127deb531fea9b766461efb61da18af55697d3c" alt="영화 자백 포스터" />
+    <img src="https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F4127deb531fea9b766461efb61da18af55697d3c" alt="영화 자백 포스터" />
+
+    <h2>이미지에 링크 걸기</h2>
+    <a href="https://www.samsung.com/sec/notebook/all-notebook/">
+        <img src="resources/images/notebook-1.jpg" alt="삼성 노트북"/></a>
+    <a href="https://www.apple.com/kr/mac/">
+        <img src="resources/images/notebook-2.jpg" alt="애플 맥북"/></a>
+    <a href="https://www.monsterlabs.co.kr/src/category/?category=2|0">
+        <img src="resources/images/notebook-3.jpg" alt="한성 15인치 노트북"/></a>
+    <a href="https://www.asus.com/kr/">
+        <img src="resources/images/notebook-4.jpg" alt="아수스 게이밍 노트북"/></a>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #side-menu {
+            border: 1px solid #ddd;
+            background-color: black;
+            font-weight: bold;
+            color: white;
+            width: 170px;
+            margin-left: -150px;
+        }
+        #side-menu:hover {
+            margin-left: -10px;
+        }
+        #side-menu ul {
+            list-style: none;
+        }
+        #side-menu ul li {
+            margin-bottom: 15px;
+        }
+        #center-content {
+            width: 600px;
+            margin: 20px auto;
+        }
+        #boxmodel-1 {
+            box-sizing: content-box;
+            width: 300px;
+            padding: 25px;
+            border: 10px solid black;
+            margin: 20px;
+        }
+        #boxmodel-2 {
+            box-sizing: border-box;
+            width: 300px;
+            padding: 25px;
+            border: 10px solid black;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>마진의 활용</h1>
+
+    <h2>margin-left를 조정해서 사이드메뉴 만들기</h2>
+    <div id="side-menu">
+        <ul>
+            <li>홈</li>
+            <li>국내도서</li>
+            <li>외국도서</li>
+            <li>전자책</li>
+            <li>CD/음반</li>
+            <li>공연/티켓</li>
+            <li>영화예매</li>
+            <li>중고거래</li>
+        </ul>
+    </div>
+
+    <h3>margin을 조정해서 컨텐츠를 화면 중앙에 위치시키기</h3>
+    <div id="center-content">
+        Ukraine's President Volodymyr Zelensky has accused the Kremlin of resorting to "energy terrorism" as Russian troops make few gains on the battlefield.
+        The border-radius property defines the radius of the element's corners.
+        Tip: This property allows you to add rounded corners to elements! 
+        This property can have from one to four values. Here are the rules:
+        Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner):
+    </div>
+
+    <div>
+        <h3>box-sizing으로 박스모델 크기 정의하기</h3>
+        <div id="boxmodel-1">내용</div>
+        <div id="boxmodel-2">내용</div>
+    </div>
+    
+</body>
+</html>

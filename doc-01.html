@@ -1,0 +1,56 @@
+<!-- 
+    doctype는 HTML 문서형식을 정의하는 태그다.
+    <!DOCTYPE html>는 HTML 5 작성규칙을 준수하는 HTML문서
+-->
+<!DOCTYPE html>
+<!-- 
+    <html>은 HTML문서의 Root 태그(Root 엘리먼트)다.
+    최상위 부모 태그다.
+    lang="ko"는 HTML 문서의 가본 언어를 지정하는 속성이다.(ko는 한국어)
+    <html>태그는 <head>와 <body>를 자식태그로 포함한다.
+ -->
+<html lang="ko">
+<!--
+    <head> 태그는 HTML 문서와 관련된 부가적인 정보를 제공하는 태그다.
+    <head> 태그에 작성된 내용은 브라우저 화면에 표시되지 않는다.
+            문서의 문자인코딩방식           :  <meta charset="UTF-8">, 
+            브라우저호환성                  :  <meta http-equiv="X-UA-Compatible" content="IE=edge">, 
+            확대/축소를 위한 설정           :  <meta name="viewport" content="width=device-width, initial-scale=1.0">, 
+            스타일시트                      :  <link rel="styleesheet" type="text/css" href="common.css"> , 
+            자바스크립트 소스               :  <script type="text/javascript" src="js/common.js"></script>, 
+            탭의 제목                       :  <title>연습</title>
+            등을 설정한다.
+-->
+<head>
+    <!-- 
+        <meta charset="UTF-8">
+        문자인코딩방식을 UTF-8 방식으로 지정한다. 
+        UTF-8방식이다 euc-kr방식일 때 한글이 정상적으로 표현된다.
+        최근에는 대부분 UTF-8방식을 사용한다. UTF-8방식은 유니코드를 기반으로 하는 문자 인코딩방식이다.
+    -->
+    <meta charset="UTF-8">
+    <!-- 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        content="IE=edge는 구식 인터넷 익스플로어의 랜더링 엔진을 사용하지 않도록 지정함.
+        최신버전의 internet exploror 브라우저를 사용해서 이 문서를 랜더링 할 때 랜더링 방식을 지정한다.
+     -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        모바일웹이나 반응형 웹에서 뷰포트(컨텐츠가 표시되는 부분)의 너비를 인식하게 하는 태그다.
+        width=device-width는  뷰포트의 너비를 장치의 너비로 설정한다.
+        initial-scale=1.0는 처음 페이지를 로딩할 때 초기 확대/축소 수준을 1.0으로 설정한다.
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        브라우저 탭에 표시되는 제목을 지정한다.
+     -->
+    <title>HTML 문서 개요</title>
+</head>
+<!-- 
+    <body> 태그는 브라우저 화면에 표시되는 컨텐츠를 포함하는 태그다.
+ -->
+<body>
+    안녕하세요.
+</body>
+</html>
